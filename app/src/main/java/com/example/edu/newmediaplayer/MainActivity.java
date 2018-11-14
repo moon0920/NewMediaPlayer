@@ -30,14 +30,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()){
             case R.id.btnPlay:
                 mPlayer.start();
-                btnPlay.setEnabled(true);
-                btnStop.setEnabled(false);
+                btnPlay.setEnabled(false);
+                btnStop.setEnabled(true);
             break;
             case R.id.btnStop:
                 mPlayer.pause();
-                btnStop.setEnabled(true);
-                btnPlay.setEnabled(false);
-                break;
+                btnStop.setEnabled(false);
+                btnPlay.setEnabled(true);
+            break;
 
         }
 
